@@ -1,0 +1,229 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.7in}
+\addtolength{\evensidemargin}{-0.7in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+
+\begin{center}
+    \textbf{\Huge \scshape Abir Pal} \\ \vspace{1pt}
+    \href{mailto:abir.pal899@gmail.com}{\underline{abir.pal899@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/imabp}{\underline{linkedin.com/in/imabp}} $|$
+    \href{https://github.com/imabp}{\underline{github.com/imabp}}
+\end{center}
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+      {Major League Hacking}{Remote}
+      {Engineering Fellow}{January 2021 -- April 2021}
+      \resumeItemListStart
+        \resumeItem{Selected as one among the 150 M.L.H Fellows, out of 43,000 Applicants. }
+         \resumeItem{Used React and TypeScript at a scale to build devtools and data ethics products.}
+         \resumeItem{Worked in a team to compete in four global hackathons.}
+         \resumeItem{Won two sprints globally at first prize.}
+     \resumeItemListEnd
+
+    \resumeSubheading
+      {Hack The Mountains}{Remote}
+      {Hackathon Manager and Developer Team Lead}{December 2020 -- April 2021}
+      \resumeItemListStart
+        \resumeItem{Engineered a Hackathon Website from development to production, and lead the team of developers which generated 80 percent increase in traffic and created a promising revenue model.}
+        \resumeItem{Created utility software and dashboard software for Hackathon including mentor support, query system, speaker management and workshop alerts. Contributed in streamlining recruiting panel as a core advisor.}
+        
+    
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{\href{https://www.cryptodrive.tech/}{CryptoDrive: Decentralized File storing and sharing service}}{[ ReactJS, Node, IPFS, Solidity,]}}{March 2021}
+          \resumeItemListStart
+            \resumeItem{ Worked on integration of smart contracts written in Solidity with Web3 and React Client.}
+            \resumeItem{ Implemented Lossless data compression algorithms to make things optimized on client side.}
+            \resumeItem{ Brainstormed and successfully, managed and developed the product.}
+            \resumeItem{ Worked in a dedicated team of 3 members, and reviewed Pull Requests and used Team Collaboration tools. }
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+    
+     \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{\href{https://imabp.github.io/WebTerminal/}{Web Terminal : Linux Simulation on Web Browsers}}{[React, Data Structures]}}{December 2020}
+          \resumeItemListStart
+            \resumeItem{Empowered beginners to get started with Linux Commands, via Web Terminal, a simulated terminal on browser. }
+            \resumeItem{Developed File Service System, using Tree Data Structures. }
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+  \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{\href{https://github.com/imabp/CertiGen}{\textbf{CertiGen}}}{ [NodeJS, JIMP and Postman]}}{October 2020}
+          \resumeItemListStart
+            \resumeItem{A devtool for Microsoft Student Ambassadors, to create certificates in seconds. }
+            \resumeItem{Actively used by 1000+ Student Ambassadors, for their events and quick certificate generations. }
+            \resumeItem{Using Postman Monitor and Newman Integrated to perform health checks.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Java, JavaScript, TypeScript, Solidity, HTML/CSS} \\
+     \textbf{Frameworks}{: React, Node.js, Airtable API, Material-UI, Interplanetary File Service System  } \\
+     \textbf{Developer Tools}{: Git, Docker, VS Code, Azure Web Apps, AsyncAPI, OpenAPI, Postman} \\
+     \textbf{Libraries}{: React-Router, MongooseJS, Newman }
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\section{Awards and Achievements}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small\item{\resumeItemListStart
+        \resumeItem{\textbf{Selected as M.L.H Fellow out of 43,000 applications}}
+        \resumeItem{\textbf{Global Hackathon Winner at MLH Fellowship for CryptoDrive} Competed with 150 Experienced Fellows in building products in data ethics. }
+        \resumeItem{\textbf{Postman Certified Expert}: Postman Certified Experts are proficient in the essential skills involved in building, maintaining, monitoring and testing API requests, collections and workspaces in Postman. }
+        \resumeItem{\textbf{Guest Speaker at Carnegie Mellon University, UC Berkeley and Georgia Tech}: Invited to speak on Secure API Designs and API Literacy at the mentioned universities, infront of the panel from Google Brain and Facebook Research.}
+      \resumeItemListEnd
+    }
+ \end{itemize}
+ \section{Volunteer Experience}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+        \resumeItemListStart
+        \resumeItem{\textbf{Postman Student Leader} Selected as one of the 11 Student Leaders, representing Global Advocacy for API Literacy at Postman and featured on official Postman.}
+        \resumeItem{\textbf{Microsoft Student Ambassador}: Leveraged 5000+ Students through my talks, articles and sessions in tech and building personal brand.}
+      \resumeItemListEnd
+    }}
+ \end{itemize}
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Chandigarh University}{Mohali, Punjab}
+      {Junior,B.E in Computer Science and Engineering}{August 2018 -- Expected July. 2022}
+  \resumeSubHeadingListEnd
+
+
+
+
+\end{document}
