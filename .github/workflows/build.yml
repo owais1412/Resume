@@ -4,14 +4,14 @@ on:
         branches:
             - "main"
         paths:
-            - "resume.tex"
+            - "SYEDOWAISHUSSAIN.tex"
             - "index.html"
             - ".github/workflows/**"
     pull_request:
         branches:
             - "main"
         paths:
-            - "resume.tex"
+            - "SYEDOWAISHUSSAIN.tex"
             - "index.html"
             - ".github/workflows/**"
 
@@ -29,7 +29,7 @@ jobs:
             - name: Compile LaTeX document
               uses: xu-cheng/latex-action@v2
               with:
-                  root_file: resume.tex
+                  root_file: SYEDOWAISHUSSAIN.tex
 
             - name: Post Processing
               run: |
@@ -38,7 +38,7 @@ jobs:
                   cp index.html build/
                   
             - name: Git add
-              run: git add resume.pdf
+              run: git add SYEDOWAISHUSSAIN.pdf
               
             - name: Deploy to GitHub Pages
               uses: JamesIves/github-pages-deploy-action@4.1.4
