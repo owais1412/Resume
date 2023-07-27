@@ -38,7 +38,9 @@ jobs:
                   cp index.html build/
                   
             - name: Git add
-              run: git add SYEDOWAISHUSSAIN.pdf
+              run: |
+                  git config --system --add safe.directory /__w/Resume/Resume
+                  git add SYEDOWAISHUSSAIN.pdf
               
             - name: Deploy to GitHub Pages
               uses: JamesIves/github-pages-deploy-action@4.1.4
